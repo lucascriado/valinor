@@ -61,3 +61,16 @@ footer {
      width: 48.4224px;
      height: 50.0736px;
 }
+
+@media (max-width: 800px) {
+     * {
+          transition: 1s;
+     }
+
+     .f-groupImages img {
+          width: 39.4224px;
+          height: 40.0736px;
+
+          cursor: pointer;
+     }
+}
