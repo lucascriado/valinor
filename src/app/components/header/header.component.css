@@ -3,7 +3,7 @@
      margin: 0;
      box-sizing: border-box;
      -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+     -moz-osx-font-smoothing: grayscale;
 }
 
 header {
@@ -41,7 +41,8 @@ header h1 {
      font-size: 22px;
      font-style: normal;
      font-weight: 800;
-     line-height: 30px; /* 78.947% */
+     line-height: 30px;
+     /* 78.947% */
 }
 
 .s-lightGreen {
@@ -56,12 +57,39 @@ header h1 {
 .h-afterTitle {
      margin-top: 35px;
      margin-bottom: 5px;
-     
+
      color: #323238;
      text-align: center;
      font-family: Plus Jakarta Sans;
      font-size: 15px;
      font-style: normal;
      font-weight: 600;
-     line-height: 22px; /* 125% */
+     line-height: 22px;
+     /* 125% */
+}
+
+@media (max-width: 800px) {
+     * {
+          transition: 1s;
+     }
+
+     .h-beforeTitle {
+          margin-top: 35px;
+
+          color: #000;
+          font-family: Plus Jakarta Sans;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 1.875rem;
+
+          text-align: center;
+     }
+
+     h1 {
+          text-align: center;
+
+          font-size: 14px;
+
+     }
 }
