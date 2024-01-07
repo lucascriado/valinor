@@ -14,7 +14,7 @@ export class QueryService {
   getTicket(param: string):Observable<any[]>{
     
     const url = `https://brapi.dev/api/quote/${param}?token=${environment.tokenAPI}&range=1d&interval=1d&fundamental=true&dividends=true:`
-    
+    // true
     return (this.http.get<any[]>(url));
   }
 }
