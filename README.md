@@ -39,18 +39,24 @@ Link do deploy no Vercel:
 
 https://valinor-lilac.vercel.app/list
 
-Crie um projeto separado caso tivessem algum problema(Também onde eu fiz os commits desse projeto!).
+Criei um projeto separado caso tivessem algum problema(Também onde eu fiz os commits desse projeto!).
 
 https://github.com/lucascriado/valinor-reserva
-
-Aprendi Angular recentemente então por curiosidade.. 
-Fiz um projeto usando CRUD nos cursos da Alura, achei que fosse ideal para um conhecimento legal da linguagem!
-
-https://github.com/lucascriado/fundamentos-angular/tree/main/1-%20Fundamentos%20do%20Angular/memoteca
 
 ---
 
 E-mail: lucascriado33@gmail.com / Número/Whatsapp: 17996743063
 
+**Desenvolvimento (Integração token)**
+
+Crie os arquivos
+src/environments/environment.development.ts
+src/environments/environment.ts
+
+e adicione o código abaixo..
+
+```ts
+  export const environment = { production: true, tokenAPI: "seuToken no site da brapi.dev" };
+```
 
 
