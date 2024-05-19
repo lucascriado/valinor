@@ -17,11 +17,7 @@
           <img class="m-containerImg" src="/assets/images/crypto.svg" alt="">
           <div class="m-containerTable">
                <div class="m-input">
-                    <input [(ngModel)]="page" class="m-inputSearch" type="text" name="" id=""
-                         placeholder="Encontre ação que deseja ver! | Ex: PETR3">
-                    <button (click)="searchPage()" type="button" class="m-inputSearchBtn">
-                         <img src="/assets/images/search.svg" alt="">
-                    </button>
+                    <input [(ngModel)]="page" (ngModelChange)="searchPage()" class="m-inputSearch" type="text" placeholder="Encontre ação que deseja ver! | Ex: PETR3">
                </div>
                <div class="table">
                     <div *ngIf="isLoading">

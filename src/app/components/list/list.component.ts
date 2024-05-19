@@ -57,8 +57,12 @@ export class ListComponent implements OnInit {
   // módulo 2 - da aplicação!
   
   searchPage(){
-    if(this.page === "" || undefined === this.page){
+    if(this.page === "" || this.page === undefined){
       console.log('O espaço de busca está em branco!')
+      this.number = 1
+      this.listService.getAPI(this.number).subscribe(
+        response => { this.api = response
+      });
     }else{
       this.number = 1
       this.listService.getAPISearch(this.page, this.number).subscribe(
@@ -66,6 +70,8 @@ export class ListComponent implements OnInit {
       });
     }
   }
+
+
 
   queryPage(){
     this.boolean = true
